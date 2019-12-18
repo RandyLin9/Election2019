@@ -1,41 +1,42 @@
-var populationOptions = {
+var tearGasOptions = {
                     visualMap: {
-                        min: 100,
-                        max: 800,
+                        min: 20,
+                        max: 500,
                         text:['High','Low'],
                         realtime: false,
                         calculable: true,
                         inRange: {
-                            color: ['lightskyblue','yellow', 'orangered']
+                            color: ['lightskyblue','red']
                         }
                     },
+                    
                     tooltip: {
                         trigger: 'item',
-                        formatter: '{b} - {c}千人'
+                        formatter: '{b} - {c}次'
                     },
                     series: [{
                         name: 'District Council',
                         type: 'map',
                         mapType: 'HK',
                         data:[
-                            {name: '中西區', value: 245.6},
-                            {name: '灣仔', value: 182.0},
-                            {name: '東區', value: 551.3},
-                            {name: '南區', value: 273.1},
-                            {name: '油尖旺', value: 335.5},
-                            {name: '深水埗', value: 403.5},
-                            {name: '九龍城', value: 420.3},
-                            {name: '黃大仙', value: 423.1},
-                            {name: '觀塘', value: 682.8},
-                            {name: '葵青', value: 514.8},
-                            {name: '荃灣', value: 314.7},
-                            {name: '屯門', value: 502.7},
-                            {name: '元朗', value: 641.0},
-                            {name: '北區', value: 318.4},
-                            {name: '大埔', value: 310.5},
-                            {name: '沙田', value: 685.5},
-                            {name: '西貢', value: 471.9},
-                            {name: '離島', value: 173.2}
+                            {name: '中西區', value: 20},
+                            {name: '灣仔', value: 50},
+                            {name: '東區', value: 10},
+                            {name: '南區', value: 12},
+                            {name: '油尖旺', value: 500},
+                            {name: '深水埗', value: 300},
+                            {name: '九龍城', value: 100},
+                            {name: '黃大仙', value: 300},
+                            {name: '觀塘', value: 50},
+                            {name: '葵青', value: 120},
+                            {name: '荃灣', value: 360},
+                            {name: '屯門', value: 180},
+                            {name: '元朗', value: 240},
+                            {name: '北區', value: 30},
+                            {name: '大埔', value: 110},
+                            {name: '沙田', value: 1200},
+                            {name: '西貢', value: 180},
+                            {name: '離島', value: 20}
                         ],
                         nameMap: {
                             'Central and Western': '中西區',
