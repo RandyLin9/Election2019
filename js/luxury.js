@@ -1,43 +1,29 @@
-var populationOptions = {
+var luxuryOptions = {
     visualMap: {
-        min: 100,
-        max: 800,
+        min: 0,
+        max: 8200,
         text: ['High', 'Low'],
         realtime: false,
         calculable: true,
         inRange: {
-            color: ['#80b9d9','#a180d9']
+            color: [ '#80b9d9','#a180d9']
         }
     },
+
     tooltip: {
         trigger: 'item',
-        formatter: '{b} - {c}k people'
+        formatter: '{b} - {c}places'
     },
 
     title: {
-        text: 'Population by District',
-        subtext: 'data from Census and Statistics Department',
-        sublink: 'https://www.statistics.gov.hk/pub/B11303012018AN18B0100.pdf',
+        text: 'Number of Luxury Apartment Units in 2018 ',
+        subtext: 'data from Hong Kong RVD',
+        sublink: 'https://www.rvd.gov.hk/doc/tc/hkpr19/05.pdf',
         left: 'left',
         textStyle: {
             color: '#000'}
     },
 
-    // toolbox: {
-    //     show: true,
-    //     orient: 'vertical',
-    //     x: 'right',
-    //     y: 'center',
-    //     feature: {
-    //         itemSize: { show: true },
-    //         mark: { show: true },
-    //         dataView: { show: true, readOnly: false },
-    //         restore: { show: true },
-    //         saveAsImage: { show: true }
-    //     }
-    // },
-
-    // asoluteZoom : {start : 90, end : 100},
     series: [{
         name: 'District Council',
         type: 'map',
@@ -70,26 +56,26 @@ var populationOptions = {
                 },
                 }
             },
-            
-            data: [
-            { name: '中西區', value: 245.6 },
-            { name: '灣仔', value: 182.0 },
-            { name: '東區', value: 551.3 },
-            { name: '南區', value: 273.1 },
-            { name: '油尖旺', value: 335.5 },
-            { name: '深水埗', value: 403.5 },
-            { name: '九龍城', value: 420.3 },
-            { name: '黃大仙', value: 423.1 },
-            { name: '觀塘', value: 682.8 },
-            { name: '葵青', value: 514.8 },
-            { name: '荃灣', value: 314.7 },
-            { name: '屯門', value: 502.7 },
-            { name: '元朗', value: 641.0 },
-            { name: '北區', value: 318.4 },
-            { name: '大埔', value: 310.5 },
-            { name: '沙田', value: 685.5 },
-            { name: '西貢', value: 471.9 },
-            { name: '離島', value: 173.2 }
+
+        data: [
+            { name: '中西區', value:  527 },
+            { name: '灣仔', value:  332 },
+            { name: '東區', value:  0 },
+            { name: '南區', value:  1745 },
+            { name: '油尖旺', value:  43 },
+            { name: '深水埗', value:  102 },
+            { name: '九龍城', value:  496 },
+            { name: '黃大仙', value:  1 },
+            { name: '觀塘', value: 0   },
+            { name: '葵青', value:  2 },
+            { name: '荃灣', value: 128 },
+            { name: '屯門', value:  538 },
+            { name: '元朗', value:  8109 },
+            { name: '北區', value:  855 },
+            { name: '大埔', value:  2439 },
+            { name: '沙田', value: 843 },
+            { name: '西貢', value: 2009 },
+            { name: '離島', value:  869 }
         ],
         nameMap: {
             'Central and Western': '中西區',
@@ -110,13 +96,8 @@ var populationOptions = {
             'Wong Tai Sin': '黃大仙',
             'Yau Tsim Mong': '油尖旺',
             'Yuen Long': '元朗'
-        },
-
-    }
-]
-
-
-
+        }
+    }]
 
 
 };

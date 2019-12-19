@@ -27,6 +27,9 @@
 	<script src="./js/population.js"></script>
 	<script src="./js/teargas.js"></script>
 	<script src="./js/voterate.js"></script>
+	<script src="./js/private.js"></script>
+	<script src="./js/luxury.js"></script>
+	<script src="./js/new.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
 
 </head>
@@ -172,68 +175,110 @@
 						</div>
 
 						<div class='row'>
-							<div class='left'>
 
-								<div id="main" style="width: 1200px; height:600px;"></div>
-								<script type="text/javascript">
-									// Switch Population Data
-									function showPopulation() {
-										$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-											echarts.registerMap('HK', geoJson);
-											var myChart = echarts.init(document.getElementById('main'));
-											myChart.setOption(option = populationOptions);
-										});
-									}
+							<div class='col-md-2'>
+								<div class='about-btns'>
 
-									//Switch Vote Rate data
-									function showVoterate() {
-										$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-											echarts.registerMap('HK', geoJson);
-											var myChart = echarts.init(document.getElementById('main'));
-											myChart.setOption(option = voterateOptions);
-										});
-									}
-									showPopulation();
+									<button type="button" class="btn-custom btn-color" onclick="showVoterate()">Vote
+										Rate</button>
 
-									//Switch Tear Gas data
-									function showTearGas() {
-										$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-											echarts.registerMap('HK', geoJson);
-											var myChart = echarts.init(document.getElementById('main'));
-											myChart.setOption(option = tearGasOptions);
-										});
-									}
-									showPopulation();
-								</script>
-								<br>
+									<button type="button" class="btn-custom btn-color" onclick="showTearGas()">Tear
+										Gas</button>
 
-								<div class='right'>
-									<div class='about-btns'>
+									<button type="button" class="btn-custom btn-color" onclick="showLuxury()">Luxury
+										Apartment</button>
 
-										<button type="button" class="btn-custom btn-color"
-											onclick="showPopulation()">人口</button>
+									<button type="button" class="btn-custom btn-color" onclick="showPrivate()">Private
+										Domestic</button>
+									<button type="button" class="btn-custom btn-color" onclick="showNew()">New
+										Immigrants</button>
 
-										<button type="button" class="btn-custom btn-color"
-											onclick="showVoterate()">民主派得票率</button>
+									<button type="button" class="btn-custom btn-color"
+										onclick="showPopulation()">Population</button>
 
-										<button type="button" class="btn-custom btn-color"
-											onclick="showTearGas()">催淚彈</button>
 
-										<button type="button" class="btn-custom btn-color"
-											onclick="showTearGas()">催淚彈</button>
-
-										<button type="button" class="btn-custom btn-color"
-											onclick="showTearGas()">催淚彈</button>
-									</div>
 
 								</div>
 
 							</div>
 
-						</div>
-					</div>
+							<div class='col-md-10'>
+								<div class='about-text'>
+									<div id="main" style="width: 1100px; height:600px;"></div>
+									<script type="text/javascript">
+										// Switch Population Data
 
-					<!-- <div class='section-block services-block'>
+
+										//Switch Vote Rate data
+										function showVoterate() {
+											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+												echarts.registerMap('HK', geoJson);
+												var myChart = echarts.init(document.getElementById('main'));
+												myChart.setOption(option = voterateOptions);
+											});
+										}
+
+
+										//Switch Tear Gas data
+										function showTearGas() {
+											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+												echarts.registerMap('HK', geoJson);
+												var myChart = echarts.init(document.getElementById('main'));
+												myChart.setOption(option = tearGasOptions);
+											});
+										}
+										showVoterate();
+
+										//Switch Luxury Apartment data
+										function showLuxury() {
+											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+												echarts.registerMap('HK', geoJson);
+												var myChart = echarts.init(document.getElementById('main'));
+												myChart.setOption(option = luxuryOptions);
+											});
+										}
+										showVoterate();
+
+										//Switch Private Domestic data
+										function showPrivate() {
+											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+												echarts.registerMap('HK', geoJson);
+												var myChart = echarts.init(document.getElementById('main'));
+												myChart.setOption(option = privateOptions);
+											});
+										}
+										showVoterate();
+
+										function showNew() {
+											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+												echarts.registerMap('HK', geoJson);
+												var myChart = echarts.init(document.getElementById('main'));
+												myChart.setOption(option = newOptions);
+											});
+										}
+										showVoterate();
+
+										function showPopulation() {
+											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+												echarts.registerMap('HK', geoJson);
+												var myChart = echarts.init(document.getElementById('main'));
+												myChart.setOption(option = populationOptions);
+											});
+										}
+										showVoterate();
+									</script>
+									<br>
+								</div>
+							</div>
+
+
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- <div class='section-block services-block'>
 
 						<div class='container-fluid'>
 
@@ -245,7 +290,7 @@
 
 
 
-					<!-- <div class='row'>
+				<!-- <div class='row'>
 
 								<div class='col-md-4'>
 									<div class='service'>
@@ -316,7 +361,7 @@
 
 
 							</div> -->
-					<!-- 
+				<!-- 
 
 				</div>
 

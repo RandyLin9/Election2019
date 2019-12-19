@@ -14,6 +14,16 @@ var voterateOptions = {
         trigger: 'item',
         formatter: '{b} - {c}%'
     },
+
+    title: {
+        text: 'Vote Rate of Pro-Democracy Camp',
+        subtext: 'data from Electoral Affairs Commission',
+        sublink: 'https://www.elections.gov.hk/dc2019/eng/results.html',
+        left: 'left',
+        textStyle: {
+            color: '#000'}
+    },
+
     series: [{
         name: 'District Council',
         type: 'map',
