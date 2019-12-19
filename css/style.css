@@ -1,36 +1,3 @@
-/*=======================================================
-	
-	Item	: 	N5 - Minimal Resume/CV & vCard Template
-	
-	Author	: 	Noman Ali Samejo
-	
---------------------------------------------------------------------------------------
-	List Of Contents
---------------------------------------------------------------------------------------
-	
-	01. General Styles
-	
-	02. Menu
-	
-	03. Section Styles
-	
-	04. Main Section
-	
-	05. About Section
-	
-	06. Resume Section
-	
-	07. Portfolio Section
-	
-	08. Contact Section
-	
-	09. Responsive CSS
-
-=========================================================*/
-
-/*=======================================================
-	General Styles
-=======================================================*/
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic);
 body, html{
 	height:100%;
@@ -520,23 +487,23 @@ body.section-switching.up .animation-block{
 
 
 /*=======================================================
-	About Section
+	Data Section
 =======================================================*/
-.about-section{
+.data-section{
 	background:#F0F0F0;
 }
-.about-block .section-header{
+.data-block .section-header{
 	margin-bottom:80px;
 }
-.about-text > p{
+.data-text > p{
 	font-size:14px;
 	color:rgba(0,0,0,.4);
 	line-height:1.8em;
 }
-.about-text{
+.data-text{
 	margin-bottom:25px;
 }
-.about-btns > .btn-custom{
+.data-btns > .btn-custom{
 	margin-right:25px;
 }
 .info-list{
@@ -768,7 +735,7 @@ body.section-switching.up .animation-block{
 
 
 /*=======================================================
-	Resume Section
+	Elector Section
 =======================================================*/
 .timeline-block .section-header{
 	margin-bottom:80px;
@@ -1386,7 +1353,7 @@ body.loaded #preloader .loader{
 		right:0;
 		bottom:0;
 	}
-	.about-btns > .btn-custom{
+	.data-btns > .btn-custom{
 		margin-bottom:10px;
 	}
 	.intro-text > .intro-btns > .btn-custom{
