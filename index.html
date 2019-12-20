@@ -166,7 +166,7 @@
 			<section id='data' class='section data-section border-d'>
 
 				<div class='section-block data-block'>
-					<div class='container-fluid'>
+					<div class='container-fluid' >
 
 						<div class='section-header'>
 							<h2>
@@ -174,10 +174,9 @@
 							</h2>
 						</div>	
 
-						<div class='row'>
+						<div style="position: relative;">
 
-							<div class='col-md-2'>
-								<div class='data-btns'>
+								<div class='data-btns' style="position:absolute; left:3%; top:60px; width:10vw;">
 
 									<button type="button" class="btn-custom btn-color" onclick="showVoterate()">Vote
 										Rate</button>
@@ -200,11 +199,11 @@
 
 								</div>
 
-							</div>
 
-							<div class='col-md-10'>
 								<div class='data-text'>
-									<div id="main" style="width: 1000px; height:600px;"></div>
+									<div id="main" style="width: 85vw; height:60vw; position: absolute; left: 0% !important;"></div>
+									</div>
+							</div>
 									<script type="text/javascript">
 										// Switch Population Data
 
@@ -268,8 +267,7 @@
 										showVoterate();
 									</script>
 									<br>
-								</div>
-							</div>
+								
 
 
 
