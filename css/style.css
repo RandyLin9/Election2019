@@ -1024,8 +1024,8 @@ body.section-switching.up .animation-block{
 }
 .portfolio-filters > li > a{
 	display:block;
-	font-size:16px;
-	font-weight:500;
+	font-size:12px;
+	font-weight:400;
 	color:rgba(0,0,0,.4);
 	text-decoration:none;
 	text-transform:uppercase;
