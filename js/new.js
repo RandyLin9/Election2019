@@ -35,7 +35,7 @@ var newOptions = {
                 show: false
             }
         },
-        zoom: 2.5,
+        zoom: 1.5,
         itemStyle: {
             normal: { label: { show: true } },
             emphasis: { borderColor: '#FFFFFF',

@@ -35,7 +35,7 @@ var voterateOptions = {
                 show: false
             }
         },
-        zoom: 2,
+        zoom: 1.5,
         itemStyle: {
             normal: { label: { show: true } },
             emphasis: { borderColor: '#FFFFFF',
