@@ -1024,12 +1024,12 @@ body.section-switching.up .animation-block{
 }
 .portfolio-filters > li > a{
 	display:block;
-	font-size:15px;
+	font-size:16px;
 	font-weight:500;
 	color:rgba(0,0,0,.4);
 	text-decoration:none;
 	text-transform:uppercase;
-	letter-spacing:0px;
+	letter-spacing:4px;
 	padding:15px 0;
 	margin:-15px 0;
 }
