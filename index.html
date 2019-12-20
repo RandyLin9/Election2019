@@ -166,437 +166,472 @@
 			<section id='data' class='section data-section border-d'>
 
 				<div class='section-block data-block'>
-					<div class='container-fluid' >
+					<div class='container-fluid'>
 
 						<div class='section-header'>
 							<h2>
-								Related Data<strong class='color'> Cmparison</strong>
+								Related Data<strong class='color'> Comparison</strong>
 							</h2>
-						</div>	
-
-						<div style="position: relative;">
-
-								<div class='data-btns' style="position:absolute; left:3%; top:60px; width:10vw;">
-
-									<button type="button" class="btn-custom btn-color" onclick="showVoterate()">Vote
-										Rate</button>
-
-									<button type="button" class="btn-custom btn-color" onclick="showTearGas()">Tear
-										Gas</button>
-
-									<button type="button" class="btn-custom btn-color" onclick="showLuxury()">Luxury
-										Apartment</button>
-
-									<button type="button" class="btn-custom btn-color" onclick="showPrivate()">Private
-										Domestic</button>
-									<button type="button" class="btn-custom btn-color" onclick="showNew()">New
-										Immigrants</button>
-
-									<button type="button" class="btn-custom btn-color"
-										onclick="showPopulation()">Population</button>
-
-
-
-								</div>
-
-
-								<div class='data-text'>
-									<div id="main" style="width: 85vw; height:60vw; position: absolute; left: 0% !important;"></div>
-									</div>
-							</div>
-									<script type="text/javascript">
-										// Switch Population Data
-
-
-										//Switch Vote Rate data
-										function showVoterate() {
-											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-												echarts.registerMap('HK', geoJson);
-												var myChart = echarts.init(document.getElementById('main'));
-												myChart.setOption(option = voterateOptions);
-											});
-										}
-
-
-										//Switch Tear Gas data
-										function showTearGas() {
-											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-												echarts.registerMap('HK', geoJson);
-												var myChart = echarts.init(document.getElementById('main'));
-												myChart.setOption(option = tearGasOptions);
-											});
-										}
-										showVoterate();
-
-										//Switch Luxury Apartment data
-										function showLuxury() {
-											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-												echarts.registerMap('HK', geoJson);
-												var myChart = echarts.init(document.getElementById('main'));
-												myChart.setOption(option = luxuryOptions);
-											});
-										}
-										showVoterate();
-
-										//Switch Private Domestic data
-										function showPrivate() {
-											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-												echarts.registerMap('HK', geoJson);
-												var myChart = echarts.init(document.getElementById('main'));
-												myChart.setOption(option = privateOptions);
-											});
-										}
-										showVoterate();
-
-										function showNew() {
-											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-												echarts.registerMap('HK', geoJson);
-												var myChart = echarts.init(document.getElementById('main'));
-												myChart.setOption(option = newOptions);
-											});
-										}
-										showVoterate();
-
-										function showPopulation() {
-											$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
-												echarts.registerMap('HK', geoJson);
-												var myChart = echarts.init(document.getElementById('main'));
-												myChart.setOption(option = populationOptions);
-											});
-										}
-										showVoterate();
-									</script>
-									<br>
-								
-
-
-
-						</div>
-
-					</div>
-				</div>
-			</section>
-
-
-			<!--=====================================================
-					Eector Section
-				=====================================================-->
-			<section id='elector' class='section elector-section border-d'>
-
-				<div class='section-block timeline-block'>
-
-					<div class='container-fluid'>
-
-						<div class='section-header'>
-
-							<h2>Elactors <strong class='color'>Background</strong></h2>
-							<br>
-							<div class="infogram-embed" data-id="fcb7554d-40f8-48e3-b300-029cffd3a2d8"
-								data-type="interactive" data-title="Copy: Hong Kong’s Ageing Population"></div>
-							<script>!function (e, i, n, s) { var t = "InfogramEmbeds", d = e.getElementsByTagName("script")[0]; if (window[t] && window[t].initialized) window[t].process && window[t].process(); else if (!e.getElementById(n)) { var o = e.createElement("script"); o.async = 1, o.id = n, o.src = "https://e.infogram.com/js/dist/embed-loader-min.js", d.parentNode.insertBefore(o, d) } }(document, 0, "infogram-async");</script>
-							<div
-								style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:0px solid #dadada;margin:0 30px">
-								<a href="https://infogram.com/fcb7554d-40f8-48e3-b300-029cffd3a2d8"
-									></a></div>
-
-
-						</div>
-
-					</div>
-
-
-			</section>
-
-
-			<!--=====================================================
-					Portfolio Section
-				=====================================================-->
-			<section id='portfolio' class='section portfolio-section border-d'>
-
-				<div class='section-block portfolio-block'>
-
-					<div class='container-fluid'>
-
-
-						<div class='section-header'>
-							<h2>Integration <strong class='color'>News</strong></h2>
 						</div>
 
 						<ul class='portfolio-filters'>
 							<li>
-								<a href='#' class='active' data-group='all'>
-									All
+								<a href='#' class='active' data-group='voterate' onclick="showVoterate()">
+									Vote Rate
 								</a>
 							</li>
 							<li>
-								<a href='#' data-group='web'>
-									Web
+								<a href='#' data-group='teargas' onclick="showTearGas()">
+									Tear Gas
 								</a>
 							</li>
 							<li>
-								<a href='#' data-group='tech'>
-									Tech
+								<a href='#' data-group='luxuryapartment' onclick="showLuxury()">
+									Luxury Apartment
 								</a>
 							</li>
 							<li>
-								<a href='#' data-group='photography'>
-									Photography
+								<a href='#' data-group='privatedomestic' onclick="showPrivate()">
+									Private Domestic
+								</a>
+							</li>
+							<li>
+								<a href='#' data-group='newimmigrants' onclick="showNew()">
+									New Immigrants
+								</a>
+							</li>
+							<li>
+								<a href='#' data-group='population' onclick="showPopulation()">
+									Population
 								</a>
 							</li>
 						</ul>
 
-						<ul class='portfolio-items'>
 
-							<li data-groups='["web","tech"]'>
-								<div class='inner'>
-									<img src='img/portfolio/1.jpg' alt>
+						<div style="position: relative;">
+<!-- 
+							<div class='data-btns' style="position:absolute; left:3%; top:60px; width:10vw;">
+
+								<button type="button" class="btn-custom btn-color" onclick="showVoterate()">Vote
+									Rate</button>
 
-									<div class='overlay'>
+								<button type="button" class="btn-custom btn-color" onclick="showTearGas()">Tear
+									Gas</button>
+
+								<button type="button" class="btn-custom btn-color" onclick="showLuxury()">Luxury
+									Apartment</button>
+
+								<button type="button" class="btn-custom btn-color" onclick="showPrivate()">Private
+									Domestic</button>
 
-										<a href='#popup-1' class='view-project'>
-											View Project
-										</a>
+								<button type="button" class="btn-custom btn-color" onclick="showNew()">New
+									Immigrants</button>
 
-										<!--project popup-->
-										<div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
+								<button type="button" class="btn-custom btn-color"
+									onclick="showPopulation()">Population</button>
 
-												<!--project popup image-->
-												<img src='img/portfolio/1.jpg' alt>
 
-											</figure>
-											<div class='content'>
 
-												<!--project popup title-->
-												<h4>My Project Title</h4>
+							</div> -->
+
 
-												<!--project popup description-->
-												<p>
-													Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-													Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-													fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-													quem quod cibo.
-												</p>
+							<div class='data-text'>
+								<div id="main"
+									style="width: 85vw; height:60vw; position: absolute; left: 0% !important;"></div>
+							</div>
+						</div>
+						<script type="text/javascript">
+							// Switch Population Data
 
-											</div>
 
-										</div>
+							//Switch Vote Rate data
+							function showVoterate() {
+								$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+									echarts.registerMap('HK', geoJson);
+									var myChart = echarts.init(document.getElementById('main'));
+									myChart.setOption(option = voterateOptions);
+								});
+							}
 
-									</div>
 
-								</div>
-							</li>
+							//Switch Tear Gas data
+							function showTearGas() {
+								$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+									echarts.registerMap('HK', geoJson);
+									var myChart = echarts.init(document.getElementById('main'));
+									myChart.setOption(option = tearGasOptions);
+								});
+							}
+							showVoterate();
 
-							<li data-groups='["tech","photography"]'>
-								<div class='inner'>
-									<img src='img/portfolio/2.jpg' alt>
+							//Switch Luxury Apartment data
+							function showLuxury() {
+								$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+									echarts.registerMap('HK', geoJson);
+									var myChart = echarts.init(document.getElementById('main'));
+									myChart.setOption(option = luxuryOptions);
+								});
+							}
+							showVoterate();
 
-									<div class='overlay'>
+							//Switch Private Domestic data
+							function showPrivate() {
+								$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+									echarts.registerMap('HK', geoJson);
+									var myChart = echarts.init(document.getElementById('main'));
+									myChart.setOption(option = privateOptions);
+								});
+							}
+							showVoterate();
 
-										<a href='#popup-2' class='view-project'>
-											View Project
-										</a>
+							function showNew() {
+								$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+									echarts.registerMap('HK', geoJson);
+									var myChart = echarts.init(document.getElementById('main'));
+									myChart.setOption(option = newOptions);
+								});
+							}
+							showVoterate();
 
-										<!--project popup-->
-										<div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
+							function showPopulation() {
+								$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
+									echarts.registerMap('HK', geoJson);
+									var myChart = echarts.init(document.getElementById('main'));
+									myChart.setOption(option = populationOptions);
+								});
+							}
+							showVoterate();
+						</script>
+						<br>
 
-												<!--project popup image-->
-												<img src='img/portfolio/2.jpg' alt>
 
-											</figure>
-											<div class='content'>
 
-												<!--project popup title-->
-												<h4>My Project Title</h4>
 
-												<!--project popup description-->
-												<p>
-													Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-													Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-													fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-													quem quod cibo.
-												</p>
+					</div>
 
-											</div>
+				</div>
+		</div>
+		</section>
 
-										</div>
 
-									</div>
+		<!--=====================================================
+					Eector Section
+				=====================================================-->
+		<section id='elector' class='section elector-section border-d'>
 
-								</div>
-							</li>
+			<div class='section-block timeline-block'>
 
-							<li data-groups='["web","photography"]'>
-								<div class='inner'>
-									<img src='img/portfolio/3.jpg' alt>
+				<div class='container-fluid'>
 
-									<div class='overlay'>
+					<div class='section-header'>
 
-										<a href='#popup-3' class='view-project'>
-											View Project
-										</a>
+						<h2>Elactors <strong class='color'>Background</strong></h2>
+						<br>
+						<div class="infogram-embed" data-id="fcb7554d-40f8-48e3-b300-029cffd3a2d8"
+							data-type="interactive" data-title="Copy: Hong Kong’s Ageing Population"></div>
+						<script>!function (e, i, n, s) { var t = "InfogramEmbeds", d = e.getElementsByTagName("script")[0]; if (window[t] && window[t].initialized) window[t].process && window[t].process(); else if (!e.getElementById(n)) { var o = e.createElement("script"); o.async = 1, o.id = n, o.src = "https://e.infogram.com/js/dist/embed-loader-min.js", d.parentNode.insertBefore(o, d) } }(document, 0, "infogram-async");</script>
+						<div
+							style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:0px solid #dadada;margin:0 30px">
+							<a href="https://infogram.com/fcb7554d-40f8-48e3-b300-029cffd3a2d8"></a></div>
 
-										<!--project popup-->
-										<div id='popup-3' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
-
-												<!--project popup image-->
-												<img src='img/portfolio/3.jpg' alt>
-
-											</figure>
-											<div class='content'>
-
-												<!--project popup title-->
-												<h4>My Project Title</h4>
-
-												<!--project popup description-->
-												<p>
-													Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-													Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-													fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-													quem quod cibo.
-												</p>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-							</li>
-
-
-							<li data-groups='["web"]'>
-								<div class='inner'>
-									<img src='img/portfolio/4.jpg' alt>
-
-									<div class='overlay'>
-
-										<a href='#popup-4' class='view-project'>
-											View Project
-										</a>
-
-										<!--project popup-->
-										<div id='popup-4' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
-
-												<!--project popup image-->
-												<img src='img/portfolio/4.jpg' alt>
-
-											</figure>
-											<div class='content'>
-
-												<!--project popup title-->
-												<h4>My Project Title</h4>
-
-												<!--project popup description-->
-												<p>
-													Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-													Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-													fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-													quem quod cibo.
-												</p>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-							</li>
-
-							<li data-groups='["tech"]'>
-								<div class='inner'>
-									<img src='img/portfolio/5.jpg' alt>
-
-									<div class='overlay'>
-
-										<a href='#popup-5' class='view-project'>
-											View Project
-										</a>
-
-										<!--project popup-->
-										<div id='popup-5' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
-
-												<!--project popup image-->
-												<img src='img/portfolio/5.jpg' alt>
-
-											</figure>
-											<div class='content'>
-
-												<!--project popup title-->
-												<h4>My Project Title</h4>
-
-												<!--project popup description-->
-												<p>
-													Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-													Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-													fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-													quem quod cibo.
-												</p>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-							</li>
-
-							<li data-groups='["photography"]'>
-								<div class='inner'>
-									<img src='img/portfolio/6.jpg' alt>
-
-									<div class='overlay'>
-
-										<a href='#popup-6' class='view-project'>
-											View Project
-										</a>
-
-										<!--project popup-->
-										<div id='popup-6' class='popup-box zoom-anim-dialog mfp-hide'>
-											<figure>
-
-												<!--project popup image-->
-												<img src='img/portfolio/6.jpg' alt>
-
-											</figure>
-											<div class='content'>
-
-												<!--project popup title-->
-												<h4>My Project Title</h4>
-
-												<!--project popup description-->
-												<p>
-													Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
-													Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
-													fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
-													quem quod cibo.
-												</p>
-
-											</div>
-
-										</div>
-
-									</div>
-
-								</div>
-							</li>
-
-						</ul>
 
 					</div>
 
 				</div>
 
-			</section>
 
-		</div>
+		</section>
+
+
+		<!--=====================================================
+					Portfolio Section
+				=====================================================-->
+		<section id='portfolio' class='section portfolio-section border-d'>
+
+			<div class='section-block portfolio-block'>
+
+				<div class='container-fluid'>
+
+
+					<div class='section-header'>
+						<h2>Integration <strong class='color'>News</strong></h2>
+					</div>
+
+					<ul class='portfolio-filters'>
+						<li>
+							<a href='#' class='active' data-group='all'>
+								All
+							</a>
+						</li>
+						<li>
+							<a href='#' data-group='web'>
+								Web
+							</a>
+						</li>
+						<li>
+							<a href='#' data-group='tech'>
+								Tech
+							</a>
+						</li>
+						<li>
+							<a href='#' data-group='photography'>
+								Photography
+							</a>
+						</li>
+					</ul>
+
+					<ul class='portfolio-items'>
+
+						<li data-groups='["web","tech"]'>
+							<div class='inner'>
+								<img src='img/portfolio/1.jpg' alt>
+
+								<div class='overlay'>
+
+									<a href='#popup-1' class='view-project'>
+										View Project
+									</a>
+
+									<!--project popup-->
+									<div id='popup-1' class='popup-box zoom-anim-dialog mfp-hide'>
+										<figure>
+
+											<!--project popup image-->
+											<img src='img/portfolio/1.jpg' alt>
+
+										</figure>
+										<div class='content'>
+
+											<!--project popup title-->
+											<h4>My Project Title</h4>
+
+											<!--project popup description-->
+											<p>
+												Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
+												Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
+												fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
+												quem quod cibo.
+											</p>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li data-groups='["tech","photography"]'>
+							<div class='inner'>
+								<img src='img/portfolio/2.jpg' alt>
+
+								<div class='overlay'>
+
+									<a href='#popup-2' class='view-project'>
+										View Project
+									</a>
+
+									<!--project popup-->
+									<div id='popup-2' class='popup-box zoom-anim-dialog mfp-hide'>
+										<figure>
+
+											<!--project popup image-->
+											<img src='img/portfolio/2.jpg' alt>
+
+										</figure>
+										<div class='content'>
+
+											<!--project popup title-->
+											<h4>My Project Title</h4>
+
+											<!--project popup description-->
+											<p>
+												Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
+												Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
+												fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
+												quem quod cibo.
+											</p>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li data-groups='["web","photography"]'>
+							<div class='inner'>
+								<img src='img/portfolio/3.jpg' alt>
+
+								<div class='overlay'>
+
+									<a href='#popup-3' class='view-project'>
+										View Project
+									</a>
+
+									<!--project popup-->
+									<div id='popup-3' class='popup-box zoom-anim-dialog mfp-hide'>
+										<figure>
+
+											<!--project popup image-->
+											<img src='img/portfolio/3.jpg' alt>
+
+										</figure>
+										<div class='content'>
+
+											<!--project popup title-->
+											<h4>My Project Title</h4>
+
+											<!--project popup description-->
+											<p>
+												Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
+												Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
+												fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
+												quem quod cibo.
+											</p>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+
+						<li data-groups='["web"]'>
+							<div class='inner'>
+								<img src='img/portfolio/4.jpg' alt>
+
+								<div class='overlay'>
+
+									<a href='#popup-4' class='view-project'>
+										View Project
+									</a>
+
+									<!--project popup-->
+									<div id='popup-4' class='popup-box zoom-anim-dialog mfp-hide'>
+										<figure>
+
+											<!--project popup image-->
+											<img src='img/portfolio/4.jpg' alt>
+
+										</figure>
+										<div class='content'>
+
+											<!--project popup title-->
+											<h4>My Project Title</h4>
+
+											<!--project popup description-->
+											<p>
+												Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
+												Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
+												fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
+												quem quod cibo.
+											</p>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li data-groups='["tech"]'>
+							<div class='inner'>
+								<img src='img/portfolio/5.jpg' alt>
+
+								<div class='overlay'>
+
+									<a href='#popup-5' class='view-project'>
+										View Project
+									</a>
+
+									<!--project popup-->
+									<div id='popup-5' class='popup-box zoom-anim-dialog mfp-hide'>
+										<figure>
+
+											<!--project popup image-->
+											<img src='img/portfolio/5.jpg' alt>
+
+										</figure>
+										<div class='content'>
+
+											<!--project popup title-->
+											<h4>My Project Title</h4>
+
+											<!--project popup description-->
+											<p>
+												Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
+												Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
+												fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
+												quem quod cibo.
+											</p>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+						<li data-groups='["photography"]'>
+							<div class='inner'>
+								<img src='img/portfolio/6.jpg' alt>
+
+								<div class='overlay'>
+
+									<a href='#popup-6' class='view-project'>
+										View Project
+									</a>
+
+									<!--project popup-->
+									<div id='popup-6' class='popup-box zoom-anim-dialog mfp-hide'>
+										<figure>
+
+											<!--project popup image-->
+											<img src='img/portfolio/6.jpg' alt>
+
+										</figure>
+										<div class='content'>
+
+											<!--project popup title-->
+											<h4>My Project Title</h4>
+
+											<!--project popup description-->
+											<p>
+												Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
+												Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
+												fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
+												quem quod cibo.
+											</p>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</li>
+
+					</ul>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</div>
 
 	</div>
 
