@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700,300,100|Lora:400,400italic,700,700italic);
-
 body, html{
 	height:100%;
 	width:100%;
@@ -1030,7 +1029,7 @@ body.section-switching.up .animation-block{
 	color:rgba(0,0,0,.4);
 	text-decoration:none;
 	text-transform:uppercase;
-	letter-spacing:1px;
+	letter-spacing:4px;
 	padding:15px 0;
 	margin:-15px 0;
 }

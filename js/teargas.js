@@ -37,7 +37,7 @@ var tearGasOptions = {
         },
         zoom: 1.5,
         itemStyle: {
-            normal: { label: { show: false } },
+            normal: { label: { show: true } },
             emphasis: { borderColor: '#FFFFFF',
             borderWidth: 1,
             label: {

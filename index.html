@@ -117,7 +117,7 @@
 			<!--=====================================================
 					Main Section
 				=====================================================-->
-			<section id='intro' class='section section-main active'>
+			<section id='intro' class='section section-main active' style="background-image: url(images/bg1.jpg);">
 
 				<div class='container-fluid'>
 
@@ -139,15 +139,13 @@
 										Data
 									</a>
 
-									<a href='#news' class='btn-custom section-toggle' data-section='news'>
-										News
-									</a>
-
 									<a href='#elector' class='btn-custom section-toggle' data-section='elector'>
 										Electors
 									</a>
 
-
+									<a href='#news' class='btn-custom section-toggle' data-section='news'>
+										News
+									</a>
 								</div>
 
 							</div>
@@ -173,50 +171,76 @@
 								Related Data<strong class='color'> Comparison</strong>
 							</h2>
 						</div>
-						<br><br>
+
 						<ul class='portfolio-filters'>
 							<li>
 								<a href='#' class='active' data-group='voterate' onclick="showVoterate()">
-									VOTE RATE
+									Vote
 								</a>
 							</li>
 
 							<li>
 								<a href='#' data-group='teargas' onclick="showTearGas()">
-									TEAR GAS
+									T.G.
 								</a>
 							</li>
 
 							<li>
 								<a href='#' data-group='luxuryapartment' onclick="showLuxury()">
-									LUXURY APARTMENT
+									Luxury
 								</a>
 							</li>
 
 							<li>
 								<a href='#' data-group='privatedomestic' onclick="showPrivate()">
-									PRIVATE DOMESTIC
+									Domestic
 								</a>
 							</li>
 
 							<li>
 								<a href='#' data-group='newimmigrants' onclick="showNew()">
-									NEW IMMIGRANTS
+									Immigrants
 								</a>
 							</li>
 
 							<li>
 								<a href='#' data-group='population' onclick="showPopulation()">
-									POPULATION
+									Population
 								</a>
 							</li>
 						</ul>
 
 
 						<div style="position: relative;">
+							<!-- 
+							<div class='data-btns' style="position:absolute; left:3%; top:60px; width:10vw;">
+
+								<button type="button" class="btn-custom btn-color" onclick="showVoterate()">Vote
+									Rate</button>
+
+								<button type="button" class="btn-custom btn-color" onclick="showTearGas()">Tear
+									Gas</button>
+
+								<button type="button" class="btn-custom btn-color" onclick="showLuxury()">Luxury
+									Apartment</button>
+
+								<button type="button" class="btn-custom btn-color" onclick="showPrivate()">Private
+									Domestic</button>
+
+								<button type="button" class="btn-custom btn-color" onclick="showNew()">New
+									Immigrants</button>
+
+								<button type="button" class="btn-custom btn-color"
+									onclick="showPopulation()">Population</button>
+
+
+
+							</div> -->
+
 
 							<div class='data-text'>
-								<div id="main" style="width: 85vw; height:100vw; position: absolute; "></div>
+								<div id="main"
+									style="width: 85vw; height:85vw; position: absolute; left: 0% !important;"></div>
 							</div>
 						</div>
 						<script type="text/javascript">
@@ -233,7 +257,7 @@
 							}
 
 
-							//Switch Protest-related data
+							//Switch Tear Gas data
 							function showTearGas() {
 								$.get('https://gist.githubusercontent.com/howawong/487f3cfe98d8ec4b5df73aa8b73f4121/raw/5cf54793c143d450c436791070b0a614e484e10e/hkg.json', function (geoJson) {
 									echarts.registerMap('HK', geoJson);
@@ -389,7 +413,10 @@
 
 											<!--project popup description-->
 											<p>
-												This includes all general news about the local election 2019.
+												Consul latine iudicabit eu vel. Cu has animal eruditi voluptatibus.
+												Eu volumus explicari sed. Mel mutat vituperata suscipiantur et, et
+												fabellas explicari adipiscing quo, no mucius euismod vis. Cu vim
+												quem quod cibo.
 											</p>
 
 										</div>
@@ -1033,9 +1060,8 @@
 
 											<!--project popup description-->
 											<p>
-												Tai Po Industrial Estate is located in the district. In 2015.
-												Pro-democracy camp only got 6 seats while the camp gains all 17 seats
-												this year.
+												Tai Po Industrial Estate is located in the district
+
 											</p>
 
 										</div>
@@ -1169,12 +1195,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -1301,12 +1327,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -1394,12 +1420,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -1529,12 +1555,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -1668,12 +1694,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -1712,55 +1738,6 @@
 											<!--project popup description-->
 											<p>
 												區議會選舉中多名政治素人當選，擊敗當區「地頭蟲」。新力軍覺得自己有何優勝，落敗的人又有何打算？油尖旺佐敦南，27歲首次參選的陳梓維擊敗區內擔任區議員11年的民建聯葉傲冬。
-
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
-
-						<li data-groups='["participants"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/1.jpg' alt>
-
-								<div class='overlay'>
-
-									<a href='#popup-57' class='view-project'>
-										Hong Kong’s 2019 District Council candidates, Part III: Tsim Sha Tsui
-										policymaker Leslie Chan
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-57' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/1.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/22/hong-kongs-2019-district-council-candidates-part-iii-tsim-sha-tsui-policymaker-leslie-chan/"
-												style="font-size: 25px">Hong Kong’s 2019 District Council candidates,
-												Part III: Tsim Sha Tsui policymaker Leslie Chan
-
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												District Council elections will take place across Hong Kong on November
-												24 amid a record increase in voter registration. In the third part of a
-												continuing series, HKFP speaks to newcomer pro-democracy candidates who
-												began their campaigns during the anti-extradition bill protests – the
-												gravest political crisis the city has faced in half a century.
 
 											</p>
 
@@ -1814,12 +1791,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -1855,51 +1832,6 @@
 											<p>
 												「上網睇到有抗白區運動，我去不到前線，又唔識急救，不如做啲嘢。」這番說話來自近日頻頻落區的九十後、深水埗社區主任林倩同。她擬考慮參選「南昌中」，拒絕讓民建聯在沒有對手下自動當選，「目標就係搞返乾淨深水埗。」
 
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
-
-						<li data-groups='["election"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/2.jpg' alt>
-
-								<div class='overlay'>
-
-									<a href='#popup-58' class='view-project'>
-										Hong Kong District Council election: voter ‘cheat sheets’ and reward allegations
-										prompt suspicions of foul play
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-58' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/2.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/25/hong-kong-district-council-election-voter-cheat-sheets-reward-allegations-prompt-suspicions-foul-play/
-													" style="font-size: 25px">Hong Kong District Council election: voter ‘cheat sheets’ and reward allegations
-												prompt suspicions of foul play
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												Some candidates in Hong Kong’s District Council election on Sunday have
-												been accused of attempting to sway voters by providing them with “cheat
-												sheets,” free transportation and rewards.
 											</p>
 
 										</div>
@@ -1951,12 +1883,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -2042,12 +1974,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -2136,12 +2068,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -2178,52 +2110,6 @@
 											<!--project popup description-->
 											<p>
 												「觀塘願景」召集人、已報名出戰觀塘月華區的梁凱晴早前擺街站期間遇襲，她昨日（9日）下午出院，今日（10日）接受本報訪問時稱，出院至今仍感暈眩，留院期間已報警並有警員協助錄取口供。她表示，一開始進行地區工作已受騷擾，故不會感到特別害怕，並稱受騷擾是每區都會出現的事情，「都冇得防備」。
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
-
-						<li data-groups='["participants"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/3.jpg' alt>
-
-								<div class='overlay'>
-
-									<a href='#popup-59' class='view-project'>
-										Hong Kong District Council elections: Stamped ballot paper for Hong Kong Island
-										appeared at Kwun Tong polling station
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-59' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/3.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/28/hong-kong-district-council-elections-stamped-ballot-paper-hong-kong-island-appeared-kwun-tong-polling-station/"
-												style="font-size: 25px">Hong Kong District Council elections: Stamped
-												ballot paper for Hong Kong Island appeared at Kwun Tong polling station
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												A stamped ballot paper indicated for another constituency located in
-												Hong Kong Island was found at a polling station in Kwun Tong, Kowloon
-												during the counting of ballots at Hong Kong’s District Council Election
-												on Sunday.
 											</p>
 
 										</div>
@@ -2275,12 +2161,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -2370,12 +2256,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -2474,7 +2360,7 @@
 
 						<li data-groups='["participants"]'>
 							<div class='inner'>
-								<img src='img/portfolio/news/10_TM_P4.jpg' alt>
+								<img src='img/portfolio/news/10_TM_P3.jpg' alt>
 
 								<div class='overlay'>
 
@@ -2489,13 +2375,13 @@
 										<figure>
 
 											<!--project popup image-->
-											<img src='img/portfolio/news/10_TM_P4.jpg' alt>
+											<img src='img/portfolio/news/10_TM_P3.jpg' alt>
 
 										</figure>
 										<div class='content'>
 
 											<!--project popup title-->
-											<a href="https://www.hk01.com/18區新聞/391012/區議會選舉-從街頭走向議會-巫堃泰力撼連任十屆79歲區議員"
+											<a href="https://www.hk01.com/社會新聞/402049/區議會選舉-樂翠-何君堯慘遭滑鐵盧-選民議辦外開香檳慶祝"
 												style="font-size: 25px"> 【區議會選舉】從街頭走向議會　巫堃泰力撼連任十屆79歲區議員
 
 											</a>
@@ -2518,7 +2404,7 @@
 
 						<li data-groups='["participants"]'>
 							<div class='inner'>
-								<img src='img/portfolio/news/10_TM_P3.jpg' alt>
+								<img src='img/portfolio/news/10_TM_P4.jpg' alt>
 
 								<div class='overlay'>
 
@@ -2533,7 +2419,7 @@
 										<figure>
 
 											<!--project popup image-->
-											<img src='img/portfolio/news/10_TM_P3.jpg' alt>
+											<img src='img/portfolio/news/10_TM_P4.jpg' alt>
 
 										</figure>
 										<div class='content'>
@@ -2581,7 +2467,7 @@
 										<div class='content'>
 
 											<!--project popup title-->
-											<a href="https://www.hk01.com/社會新聞/402049/區議會選舉-樂翠-何君堯慘遭滑鐵盧-選民議辦外開香檳慶祝"
+											<a href="https://www.hk01.com/18區新聞/391012/區議會選舉-從街頭走向議會-巫堃泰力撼連任十屆79歲區議員"
 												style="font-size: 25px"> 【區議會選舉・樂翠】何君堯慘遭滑鐵盧　選民議辦外開香檳慶祝
 
 
@@ -2640,12 +2526,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -2776,12 +2662,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -2909,12 +2795,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -3048,12 +2934,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -3090,58 +2976,6 @@
 											<!--project popup description-->
 											<p>
 												西貢區議會五個鄉郊選區，今年全部有民主派參選。在「坑口西」，代表是「將向天晴」的素人余浚寧。
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
-
-						<li data-groups='["participants"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/4.jpg' alt>
-
-								<div class='overlay'>
-
-									<a href='#popup-60' class='view-project'>
-										After 25 years as Sai Kung Council Chairman, George Ng Sze-fuk should stand down
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-60' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/4.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://hongkongbuzz.hk/2019/10/after-25-years-as-sai-kung-council-chairman-george-ng-sze-fuk-should-stand-down "
-												style="font-size: 25px">After 25 years as Sai Kung Council Chairman,
-												George Ng Sze-fuk should stand down
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												George Ng Sze-fuk, Sai Kung District Council chairman for 25 years,
-												should step aside to make room for new blood and fresh ideas. George
-												shows no sign of doing this, however: he has been nominated to stand
-												again in next month’s elections. As Hong Kong’s longest serving district
-												chairman, he naturally invites questions on why he hangs on for so long.
-												Is it the more than $98,000 salary and benefits, the smart office in
-												Tseung Kwan O government building, cementing of control of local
-												councils in favour of Beijing, the enjoyment of power and influence over
-												the spending of a $25 million-plus budget, or is there something more?
-												Touring the district with the secretary for development or the secretary
-												for transport and housing must be very interesting.
 											</p>
 
 										</div>
@@ -3192,12 +3026,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -3326,12 +3160,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -3417,12 +3251,12 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
@@ -3510,63 +3344,18 @@
 						</li>
 						<li>
 							<a href='#' data-group='data'>
-								Analysis/Review
+								Data-releated
 							</a>
 						</li>
 						<li>
 							<a href='#' data-group='tear'>
-								Protest-related
+								Tear Gas
 							</a>
 						</li>
 					</ul>
 
 					<ul class='portfolio-items'>
-						<li data-groups='["participants"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/5.jpg' alt>
 
-								<div class='overlay'>
-
-									<a href='#popup-61' class='view-project'>
-										Hong Kong anti-graft watchdog receives 201 complaints ahead of District Council
-										elections
-
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-61' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/5.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/20/hong-kong-anti-graft-watchdog-receives-201-complaints-ahead-district-council-elections/"
-												style="font-size: 25px">Hong Kong anti-graft watchdog receives 201
-												complaints ahead of District Council elections
-
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												Hong Kong’s anti-corruption watchdog has received 201 pursuable
-												complaints as of last Thursday, less than two weeks ahead of Sunday’s
-												District Council elections.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
 						<li data-groups='["participants"]'>
 							<div class='inner'>
 								<img src='img/portfolio/news/00_all_P1.jpg' alt>
@@ -4185,51 +3974,7 @@
 
 							</div>
 						</li>
-						<li data-groups='["tear"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/8.jpg' alt>
 
-								<div class='overlay'>
-
-									<a href='#popup-64' class='view-project'>
-										Hong Kong holds a protest election, but will it produce a protest result?
-
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-64' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/8.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/23/hong-kong-holds-protest-election-will-produce-protest-result/
-											" style="font-size: 25px">Hong Kong holds a protest election, but will it
-												produce a protest result?
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												Keep calm and carry on is the motto of the day. Electioneering has
-												somehow carried on despite the interventions of brick-throwing
-												protesters, barricaded streets, and police riot squads equipped with all
-												the tools of their trade.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
 						<li data-groups='["participants"]'>
 							<div class='inner'>
 								<img src='img/portfolio/news/04_Southern_P2.jpg' alt>
@@ -4356,20 +4101,18 @@
 							</div>
 						</li>
 
-						<li data-groups='["election"]'>
+						<li data-groups='["participants"]'>
 							<div class='inner'>
 								<img src='img/portfolio/news/07_KlnCity_P1.jpg' alt>
 
 								<div class='overlay'>
 
-									<a href='#popup-58' class='view-project'>
-										Hong Kong District Council election: voter ‘cheat sheets’ and reward allegations
-										prompt suspicions of foul play
-
+									<a href='#popup-56' class='view-project'>
+										【區議會選舉・短片】土瓜灣北選區對決　長毛梁國雄「狙擊」李慧琼　尹兆堅：選情嚴峻
 									</a>
 
 									<!--project popup-->
-									<div id='popup-58' class='popup-box zoom-anim-dialog mfp-hide'>
+									<div id='popup-56' class='popup-box zoom-anim-dialog mfp-hide'>
 										<figure>
 
 											<!--project popup image-->
@@ -4379,17 +4122,13 @@
 										<div class='content'>
 
 											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/25/hong-kong-district-council-election-voter-cheat-sheets-reward-allegations-prompt-suspicions-foul-play/
-												" style="font-size: 25px">Hong Kong District Council election: voter ‘cheat sheets’ and reward allegations
-												prompt suspicions of foul play
-
+											<a href="https://news.mingpao.com/ins/港聞/article/20191124/s00001/1574568718935/【區議會選舉-短片】土瓜灣北選區對決-長毛梁國雄「狙擊」李慧琼-尹兆堅-選情嚴峻
+												" style="font-size: 25px">【區議會選舉・短片】土瓜灣北選區對決　長毛梁國雄「狙擊」李慧琼　尹兆堅：選情嚴峻
 											</a>
 
 											<!--project popup description-->
 											<p>
-												Some candidates in Hong Kong’s District Council election on Sunday have
-												been accused of attempting to sway voters by providing them with “cheat
-												sheets,” free transportation and rewards.
+												2019區議會選舉今日（24日）投票，各區候選人積極拉票，其中九龍城土瓜灣北選區候選人、民建聯主席李慧琼下午5時許被對手、社民連立法會前議員「長毛」梁國雄「狙擊」，場面一度混亂。
 											</p>
 
 										</div>
@@ -4616,100 +4355,7 @@
 
 							</div>
 						</li>
-						<li data-groups='["participants"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/1.jpg' alt>
 
-								<div class='overlay'>
-
-									<a href='#popup-57' class='view-project'>
-										Hong Kong’s 2019 District Council candidates, Part III: Tsim Sha Tsui
-										policymaker Leslie Chan
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-57' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/1.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/22/hong-kongs-2019-district-council-candidates-part-iii-tsim-sha-tsui-policymaker-leslie-chan/"
-												style="font-size: 25px">Hong Kong’s 2019 District Council candidates,
-												Part III: Tsim Sha Tsui policymaker Leslie Chan
-
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												District Council elections will take place across Hong Kong on November
-												24 amid a record increase in voter registration. In the third part of a
-												continuing series, HKFP speaks to newcomer pro-democracy candidates who
-												began their campaigns during the anti-extradition bill protests – the
-												gravest political crisis the city has faced in half a century.
-
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
-
-						<li data-groups='["election"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/2.jpg' alt>
-
-								<div class='overlay'>
-
-									<a href='#popup-58' class='view-project'>
-										Hong Kong District Council election: voter ‘cheat sheets’ and reward allegations
-										prompt suspicions of foul play
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-58' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/2.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/25/hong-kong-district-council-election-voter-cheat-sheets-reward-allegations-prompt-suspicions-foul-play/
-															" style="font-size: 25px">Hong Kong District Council election: voter ‘cheat sheets’ and reward
-												allegations
-												prompt suspicions of foul play
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												Some candidates in Hong Kong’s District Council election on Sunday have
-												been accused of attempting to sway voters by providing them with “cheat
-												sheets,” free transportation and rewards.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
 						<li data-groups='["participants"]'>
 							<div class='inner'>
 								<img src='img/portfolio/news/10_TM_P3.jpg' alt>
@@ -4795,50 +4441,7 @@
 
 							</div>
 						</li>
-						<li data-groups='["data"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/7.jpg' alt>
 
-								<div class='overlay'>
-
-									<a href='#popup-63' class='view-project'>
-										Meet 5 of Hong Kong’s Newest Politicians
-									</a>
-
-									<!--project popup-->
-									<div id='popup-63' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/7.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.nytimes.com/2019/11/25/world/asia/hong-kong-election-winners.html"
-												style="font-size: 25px">
-												Meet 5 of Hong Kong’s Newest Politicians
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												Hong Kong’s district council election saw the pro-establishment camp
-												have one of its biggest defeats since the territory returned to Chinese
-												control 22 years ago, as dozens of seasoned politicians were replaced
-												with a crop of newcomers, many of whom were inspired to run by the
-												antigovernment protests.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
 						<li data-groups='["election"]'>
 							<div class='inner'>
 								<img src='img/portfolio/news/10_TM_P5.jpg' alt>
@@ -4881,57 +4484,7 @@
 
 							</div>
 						</li>
-						<li data-groups='["participants"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/4.jpg' alt>
 
-								<div class='overlay'>
-
-									<a href='#popup-60' class='view-project'>
-										After 25 years as Sai Kung Council Chairman, George Ng Sze-fuk should stand down
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-60' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/4.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://hongkongbuzz.hk/2019/10/after-25-years-as-sai-kung-council-chairman-george-ng-sze-fuk-should-stand-down "
-												style="font-size: 25px">After 25 years as Sai Kung Council Chairman,
-												George Ng Sze-fuk should stand down
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												George Ng Sze-fuk, Sai Kung District Council chairman for 25 years,
-												should step aside to make room for new blood and fresh ideas. George
-												shows no sign of doing this, however: he has been nominated to stand
-												again in next month’s elections. As Hong Kong’s longest serving district
-												chairman, he naturally invites questions on why he hangs on for so long.
-												Is it the more than $98,000 salary and benefits, the smart office in
-												Tseung Kwan O government building, cementing of control of local
-												councils in favour of Beijing, the enjoyment of power and influence over
-												the spending of a $25 million-plus budget, or is there something more?
-												Touring the district with the secretary for development or the secretary
-												for transport and housing must be very interesting.
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
 
 						<li data-groups='["participants"]'>
 							<div class='inner'>
@@ -5006,49 +4559,6 @@
 											<p>
 												在元朗「八鄉南」選區，現任區議員鄉事派黎偉雄今屆不爭取連任，改派黎永添出選，而立法會議員朱凱廸亦出選該區。最終黎永添取得3,799票，朱凱廸獲得3,435票，朱的「Plan
 												B」徐卓然則獲得41票，黎永添成功當選。今屆該區投票人數為7,294人，投票率為72.2%。
-
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
-
-						<li data-groups='["data"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/6.jpg' alt>
-
-								<div class='overlay'>
-
-									<a href='#popup-62' class='view-project'>
-										Hong Kong district council elections: winners and losers
-									</a>
-
-									<!--project popup-->
-									<div id='popup-62' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/6.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://multimedia.scmp.com/infographics/news/hong-kong/article/3039600/hong-kong-district-council-elections-2019/index.html?src=social"
-												style="font-size: 25px">
-												Hong Kong district council elections: winners and losers
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												Both the government and opposition are claiming the district council
-												elections show public support for their policies.
 
 											</p>
 
@@ -5427,53 +4937,6 @@
 											<p>
 												選舉管理委員會上周公布明年區議會選舉選區劃界的臨時建議，提出將長洲的選區合併，由兩個議席減至一個議席，把騰出了的一個議席搬到東涌，新增「東涌北」選區。離島區議會今午舉行特別會議，就選管會的臨時建議進行討論，多名區議員不滿建議的選區劃界。
 
-											</p>
-
-										</div>
-
-									</div>
-
-								</div>
-
-							</div>
-						</li>
-
-
-						<li data-groups='["participants"]'>
-							<div class='inner'>
-								<img src='img/portfolio/news/3.jpg' alt>
-
-								<div class='overlay'>
-
-									<a href='#popup-59' class='view-project'>
-										Hong Kong District Council elections: Stamped ballot paper for Hong Kong Island
-										appeared at Kwun Tong polling station
-
-									</a>
-
-									<!--project popup-->
-									<div id='popup-59' class='popup-box zoom-anim-dialog mfp-hide'>
-										<figure>
-
-											<!--project popup image-->
-											<img src='img/portfolio/news/3.jpg' alt>
-
-										</figure>
-										<div class='content'>
-
-											<!--project popup title-->
-											<a href="https://www.hongkongfp.com/2019/11/28/hong-kong-district-council-elections-stamped-ballot-paper-hong-kong-island-appeared-kwun-tong-polling-station/"
-												style="font-size: 25px">Hong Kong District Council elections: Stamped
-												ballot paper for Hong Kong Island appeared at Kwun Tong polling station
-
-											</a>
-
-											<!--project popup description-->
-											<p>
-												A stamped ballot paper indicated for another constituency located in
-												Hong Kong Island was found at a polling station in Kwun Tong, Kowloon
-												during the counting of ballots at Hong Kong’s District Council Election
-												on Sunday.
 											</p>
 
 										</div>
